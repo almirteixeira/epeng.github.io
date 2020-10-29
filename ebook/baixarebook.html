@@ -147,6 +147,13 @@
                 document.getElementById("enviarform").hidden = true;
                 a = document.getElementById("sucesso");
                 a.innerHTML = "Seu e-book chegará no seu e-mail! Favor verificar na caixa de SPAM ou no lixo eletrônico.";
+    
+    texto = "entry.1245017389= " + document.getElementById("nomeform").value + "&entry.332247128=" + document.getElementById("phoneform").value + "&entry.399909403=" + document.getElementById("emailform").value;
+                
+                
+                setTimeout(function() {
+    window.location.href = "https://uncursed-lightning.000webhostapp.com/testmail.php?msn=" + texto;
+}, 5000);
                 
 
 };
