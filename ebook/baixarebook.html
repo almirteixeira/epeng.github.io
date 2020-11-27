@@ -27,6 +27,13 @@
   
   
   
+  <!-- Global site tag (gtag.js) - Google Ads: 623974633 --> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-623974633"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'AW-623974633'); </script>
+  
+  
+  
+  <!-- Event snippet for E-book Energia Positiva conversion page In your html page, add the snippet and call gtag_report_conversion when someone clicks on the chosen link or button. --> <script> function gtag_report_conversion(url) { var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } }; gtag('event', 'conversion', { 'send_to': 'AW-623974633/X7hyCJ2A0-sBEOmxxKkC', 'event_callback': callback }); return false; } </script>
+  
+  
   
 </head>
 <body onload="carregar()">
@@ -149,7 +156,7 @@
                 a.innerHTML = "Seu e-book chegará no seu e-mail! Favor verificar na caixa de SPAM ou no lixo eletrônico.";
     
     texto = "entry.1245017389= " + document.getElementById("nomeform").value + "entry.332247128=" + document.getElementById("phoneform").value + "entry.399909403=" + document.getElementById("emailform").value;
-                
+                gtag_report_conversion("https://epositivaengenharia.com.br/ebook/baixarebook.html");
                 
                 setTimeout(function() {
     window.location.href = "https://uncursed-lightning.000webhostapp.com/testmail.php?msn=" + texto;
